@@ -19,8 +19,56 @@ Option Compare Binary
 
 Module TicTacToe
 
+    'gameboard array where the game data is stored. "X", "O", and ""
+    Private gameboardData(2, 2) As String
+
     Sub Main()
+
 
     End Sub
 
+
+    Function Winner() As String
+        Dim _winner As String
+
+        Return _winner
+    End Function
+
+
+    Private Function CheckCoulumns() As String
+
+        Return ""
+    End Function
+    Private Function CheckRows() As String
+
+        Return ""
+    End Function
+
+    Private Sub Turn()
+
+    End Sub
+
+    Private Sub DisplayGameBoard()
+
+    End Sub
+
+    Private Sub NewGame()
+
+    End Sub
+    ''' <summary>
+    ''' Determines current player 
+    ''' </summary>
+    ''' <returns> "X" or "O" as string</returns>
+    Private Function CurrentPlayer() As String
+        Static _currentPlayer As String = "X"
+
+        Select Case _currentPlayer
+            Case "X"
+                _currentPlayer = "O"
+            Case Else
+                _currentPlayer = "X"
+        End Select
+
+        Return _currentPlayer
+    End Function
 End Module
