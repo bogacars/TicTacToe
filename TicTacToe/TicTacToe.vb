@@ -24,7 +24,6 @@ Module TicTacToe
 
     Sub Main()
 
-
     End Sub
 
 
@@ -56,7 +55,7 @@ Module TicTacToe
 
     End Sub
     ''' <summary>
-    ''' Determines current player 
+    ''' toggle current player 
     ''' </summary>
     ''' <returns> "X" or "O" as string</returns>
     Private Function CurrentPlayer() As String
