@@ -4,7 +4,8 @@
 
 Option Strict On
 Option Explicit On
-Option Compare Binary
+Option Compare Text
+
 
 'TODO:
 'display game board console
