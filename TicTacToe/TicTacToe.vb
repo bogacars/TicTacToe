@@ -27,7 +27,8 @@ Module TicTacToe
             Console.WriteLine($"It is {CurrentPlayer()}'s turn!")
         Next
         Console.ReadLine()
-
+        Turn()
+        Console.ReadLine()
     End Sub
 
 
@@ -48,7 +49,11 @@ Module TicTacToe
     End Function
 
     Private Sub Turn()
-
+        'This is very broke eventually it will be fixed
+        If CurrentPlayer() = "X" Then
+        ElseIf CurrentPlayer() = "O" Then
+        End If
+        Console.WriteLine()
     End Sub
 
     Private Sub DisplayGameBoard()
@@ -61,6 +66,7 @@ Module TicTacToe
     Private Sub NewGame(ByRef gameboardData(,) As Boolean)
         For Row = 0 To 2
             For column = 0 To 2
+                'sets the array gameboardData to clear all contents
                 gameboardData(column, Row) = False
             Next
         Next
