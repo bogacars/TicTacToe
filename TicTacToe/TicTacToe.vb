@@ -23,6 +23,10 @@ Module TicTacToe
     Private gameboardData(2, 2) As String
 
     Sub Main()
+        For i = 1 To 10
+            Console.WriteLine($"It is {CurrentPlayer()}'s turn!")
+        Next
+        Console.ReadLine()
 
     End Sub
 
@@ -50,9 +54,16 @@ Module TicTacToe
     Private Sub DisplayGameBoard()
 
     End Sub
-
-    Private Sub NewGame()
-
+    ''' <summary>
+    ''' sub resets gameboardData array to begin new game
+    ''' </summary>
+    ''' <param name="gameboardData"></param>
+    Private Sub NewGame(ByRef gameboardData(,) As Boolean)
+        For Row = 0 To 2
+            For column = 0 To 2
+                gameboardData(column, Row) = False
+            Next
+        Next
     End Sub
     ''' <summary>
     ''' toggle current player 
